@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9RV-WL-Ujf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9RV-WL-Ujf">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,6 +27,7 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Please, login" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Blp-Kr-vb6">
                                         <rect key="frame" x="0.0" y="0.0" width="321" height="60"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="LoginLabel"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="SQ9-3I-BqE"/>
                                         </constraints>
@@ -35,6 +36,7 @@
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEB-Fu-wJz">
                                         <rect key="frame" x="0.0" y="75" width="321" height="21"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="ErrorMessage"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="H0n-qg-58y"/>
                                         </constraints>
@@ -44,6 +46,7 @@
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="89j-Iu-N9O">
                                         <rect key="frame" x="0.0" y="111" width="321" height="50"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="UsernameField"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="LqI-rb-TDU"/>
                                         </constraints>
@@ -51,18 +54,20 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qul-kn-g7l">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter pass" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FYI-mc-hFM">
                                         <rect key="frame" x="0.0" y="176" width="321" height="50"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="Password"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="2x7-x4-gHM"/>
+                                            <constraint firstAttribute="height" constant="50" id="opR-4A-B7F"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2b-l9-VVy">
                                         <rect key="frame" x="0.0" y="241" width="321" height="50"/>
                                         <color key="backgroundColor" red="0.3448151888302412" green="0.51944696707500537" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="LoginButton"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="KAM-JX-KBs"/>
                                         </constraints>
@@ -91,7 +96,7 @@
                     <connections>
                         <outlet property="labelMessage" destination="aEB-Fu-wJz" id="xGo-vW-Q5L"/>
                         <outlet property="loginButton" destination="t2b-l9-VVy" id="hfb-3f-Awm"/>
-                        <outlet property="textFieldPassword" destination="Qul-kn-g7l" id="3oX-fh-2no"/>
+                        <outlet property="textFieldPassword" destination="FYI-mc-hFM" id="FWD-vJ-n8G"/>
                         <outlet property="textFieldUserName" destination="89j-Iu-N9O" id="IvP-2R-UZo"/>
                     </connections>
                 </viewController>
@@ -125,6 +130,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZt-pT-gD0">
                                 <rect key="frame" x="16" y="345" width="343" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Logout"/>
                                 <state key="normal" title="Logout"/>
                                 <connections>
                                     <action selector="buttonLogout:" destination="Siz-Sl-f10" eventType="touchUpInside" id="JOS-TY-d8Q"/>
