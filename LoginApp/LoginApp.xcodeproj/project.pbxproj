@@ -13,22 +13,7 @@
 		5DDE0B6E21E364CC001F52B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DDE0B6C21E364CC001F52B5 /* LaunchScreen.storyboard */; };
 		5DDE0B7621E364F7001F52B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DDE0B7521E364F7001F52B5 /* Main.storyboard */; };
 		5DDE0B7821E36542001F52B5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDE0B7721E36542001F52B5 /* ProfileViewController.swift */; };
-		ADAEF95E21E4D9680038F467 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADAEF95D21E4D9680038F467 /* Info.plist */; };
-		C154A10021E370CE00ADFC95 /* GeneralUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154A0F021E3705200ADFC95 /* GeneralUITest.swift */; };
-		C154A10221E3719000ADFC95 /* LoginUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154A10121E3719000ADFC95 /* LoginUITest.swift */; };
-		C154A10421E3735B00ADFC95 /* ApplicationWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154A10321E3735B00ADFC95 /* ApplicationWindow.swift */; };
-		C154A10621E375A200ADFC95 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154A10521E375A200ADFC95 /* Extensions.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C154A0FB21E370C700ADFC95 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5DDE0B5821E364C9001F52B5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5DDE0B5F21E364C9001F52B5;
-			remoteInfo = LoginApp;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5DDE0B6021E364C9001F52B5 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,23 +24,10 @@
 		5DDE0B6F21E364CC001F52B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DDE0B7521E364F7001F52B5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5DDE0B7721E36542001F52B5 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		ADAEF95D21E4D9680038F467 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C154A0F021E3705200ADFC95 /* GeneralUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralUITest.swift; sourceTree = "<group>"; };
-		C154A0F621E370C700ADFC95 /* LoginAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C154A10121E3719000ADFC95 /* LoginUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUITest.swift; sourceTree = "<group>"; };
-		C154A10321E3735B00ADFC95 /* ApplicationWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationWindow.swift; sourceTree = "<group>"; };
-		C154A10521E375A200ADFC95 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5DDE0B5D21E364C9001F52B5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C154A0F321E370C700ADFC95 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -68,7 +40,6 @@
 		5DDE0B5721E364C9001F52B5 = {
 			isa = PBXGroup;
 			children = (
-				C154A0EF21E3703300ADFC95 /* LoginAppUITests */,
 				5DDE0B6221E364C9001F52B5 /* LoginApp */,
 				5DDE0B6121E364C9001F52B5 /* Products */,
 			);
@@ -78,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				5DDE0B6021E364C9001F52B5 /* LoginApp.app */,
-				C154A0F621E370C700ADFC95 /* LoginAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,18 +65,6 @@
 				5DDE0B6F21E364CC001F52B5 /* Info.plist */,
 			);
 			path = LoginApp;
-			sourceTree = "<group>";
-		};
-		C154A0EF21E3703300ADFC95 /* LoginAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C154A0F021E3705200ADFC95 /* GeneralUITest.swift */,
-				C154A10121E3719000ADFC95 /* LoginUITest.swift */,
-				C154A10521E375A200ADFC95 /* Extensions.swift */,
-				C154A10321E3735B00ADFC95 /* ApplicationWindow.swift */,
-				ADAEF95D21E4D9680038F467 /* Info.plist */,
-			);
-			path = LoginAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,40 +87,18 @@
 			productReference = 5DDE0B6021E364C9001F52B5 /* LoginApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C154A0F521E370C700ADFC95 /* LoginAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C154A0FD21E370C700ADFC95 /* Build configuration list for PBXNativeTarget "LoginAppUITests" */;
-			buildPhases = (
-				C154A0F221E370C700ADFC95 /* Sources */,
-				C154A0F321E370C700ADFC95 /* Frameworks */,
-				C154A0F421E370C700ADFC95 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C154A0FC21E370C700ADFC95 /* PBXTargetDependency */,
-			);
-			name = LoginAppUITests;
-			productName = LoginAppUITests;
-			productReference = C154A0F621E370C700ADFC95 /* LoginAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		5DDE0B5821E364C9001F52B5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1000;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Anastasia;
 				TargetAttributes = {
 					5DDE0B5F21E364C9001F52B5 = {
 						CreatedOnToolsVersion = 10.1;
-					};
-					C154A0F521E370C700ADFC95 = {
-						CreatedOnToolsVersion = 10.0;
-						TestTargetID = 5DDE0B5F21E364C9001F52B5;
 					};
 				};
 			};
@@ -180,7 +116,6 @@
 			projectRoot = "";
 			targets = (
 				5DDE0B5F21E364C9001F52B5 /* LoginApp */,
-				C154A0F521E370C700ADFC95 /* LoginAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -193,14 +128,6 @@
 				5DDE0B7621E364F7001F52B5 /* Main.storyboard in Resources */,
 				5DDE0B6E21E364CC001F52B5 /* LaunchScreen.storyboard in Resources */,
 				5DDE0B6B21E364CC001F52B5 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C154A0F421E370C700ADFC95 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ADAEF95E21E4D9680038F467 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,26 +144,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C154A0F221E370C700ADFC95 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C154A10621E375A200ADFC95 /* Extensions.swift in Sources */,
-				C154A10021E370CE00ADFC95 /* GeneralUITest.swift in Sources */,
-				C154A10221E3719000ADFC95 /* LoginUITest.swift in Sources */,
-				C154A10421E3735B00ADFC95 /* ApplicationWindow.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C154A0FC21E370C700ADFC95 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5DDE0B5F21E364C9001F52B5 /* LoginApp */;
-			targetProxy = C154A0FB21E370C700ADFC95 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5DDE0B6C21E364CC001F52B5 /* LaunchScreen.storyboard */ = {
@@ -372,7 +280,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LoginApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,7 +297,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LoginApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -399,44 +305,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		C154A0FE21E370C700ADFC95 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LoginAppUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.loginapp.LoginAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LoginApp;
-			};
-			name = Debug;
-		};
-		C154A0FF21E370C700ADFC95 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LoginAppUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.loginapp.LoginAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LoginApp;
 			};
 			name = Release;
 		};
@@ -457,15 +325,6 @@
 			buildConfigurations = (
 				5DDE0B7321E364CC001F52B5 /* Debug */,
 				5DDE0B7421E364CC001F52B5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C154A0FD21E370C700ADFC95 /* Build configuration list for PBXNativeTarget "LoginAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C154A0FE21E370C700ADFC95 /* Debug */,
-				C154A0FF21E370C700ADFC95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

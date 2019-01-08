@@ -33,6 +33,13 @@ class ViewController: UIViewController {
         }
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        if UserDefaults.standard.string(forKey: "username") != nil {
+            showLogin()
+        }
+    }
+    
     private func showLogin() {
         let profileViewController = storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
         navigationController?.pushViewController(profileViewController, animated: true)
