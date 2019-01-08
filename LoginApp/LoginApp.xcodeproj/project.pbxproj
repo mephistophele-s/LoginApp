@@ -13,7 +13,21 @@
 		5DDE0B6E21E364CC001F52B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DDE0B6C21E364CC001F52B5 /* LaunchScreen.storyboard */; };
 		5DDE0B7621E364F7001F52B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DDE0B7521E364F7001F52B5 /* Main.storyboard */; };
 		5DDE0B7821E36542001F52B5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDE0B7721E36542001F52B5 /* ProfileViewController.swift */; };
+		ADAEF97121E4E4EF0038F467 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEF96D21E4E4EE0038F467 /* Extensions.swift */; };
+		ADAEF97221E4E4EF0038F467 /* ApplicationWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEF96E21E4E4EE0038F467 /* ApplicationWindow.swift */; };
+		ADAEF97321E4E4EF0038F467 /* GeneralUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEF96F21E4E4EE0038F467 /* GeneralUITest.swift */; };
+		ADAEF97421E4E4EF0038F467 /* LoginUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEF97021E4E4EE0038F467 /* LoginUITest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADAEF96821E4E4D90038F467 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DDE0B5821E364C9001F52B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DDE0B5F21E364C9001F52B5;
+			remoteInfo = LoginApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5DDE0B6021E364C9001F52B5 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +38,23 @@
 		5DDE0B6F21E364CC001F52B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DDE0B7521E364F7001F52B5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5DDE0B7721E36542001F52B5 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		ADAEF96321E4E4D80038F467 /* LoginAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADAEF96721E4E4D90038F467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADAEF96D21E4E4EE0038F467 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		ADAEF96E21E4E4EE0038F467 /* ApplicationWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationWindow.swift; sourceTree = "<group>"; };
+		ADAEF96F21E4E4EE0038F467 /* GeneralUITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUITest.swift; sourceTree = "<group>"; };
+		ADAEF97021E4E4EE0038F467 /* LoginUITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginUITest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5DDE0B5D21E364C9001F52B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADAEF96021E4E4D80038F467 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				5DDE0B6221E364C9001F52B5 /* LoginApp */,
+				ADAEF96421E4E4D90038F467 /* LoginAppUITests */,
 				5DDE0B6121E364C9001F52B5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				5DDE0B6021E364C9001F52B5 /* LoginApp.app */,
+				ADAEF96321E4E4D80038F467 /* LoginAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +94,18 @@
 				5DDE0B6F21E364CC001F52B5 /* Info.plist */,
 			);
 			path = LoginApp;
+			sourceTree = "<group>";
+		};
+		ADAEF96421E4E4D90038F467 /* LoginAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ADAEF96E21E4E4EE0038F467 /* ApplicationWindow.swift */,
+				ADAEF96D21E4E4EE0038F467 /* Extensions.swift */,
+				ADAEF96F21E4E4EE0038F467 /* GeneralUITest.swift */,
+				ADAEF97021E4E4EE0038F467 /* LoginUITest.swift */,
+				ADAEF96721E4E4D90038F467 /* Info.plist */,
+			);
+			path = LoginAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,18 +128,40 @@
 			productReference = 5DDE0B6021E364C9001F52B5 /* LoginApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		ADAEF96221E4E4D80038F467 /* LoginAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADAEF96A21E4E4D90038F467 /* Build configuration list for PBXNativeTarget "LoginAppUITests" */;
+			buildPhases = (
+				ADAEF95F21E4E4D80038F467 /* Sources */,
+				ADAEF96021E4E4D80038F467 /* Frameworks */,
+				ADAEF96121E4E4D80038F467 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADAEF96921E4E4D90038F467 /* PBXTargetDependency */,
+			);
+			name = LoginAppUITests;
+			productName = LoginAppUITests;
+			productReference = ADAEF96321E4E4D80038F467 /* LoginAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		5DDE0B5821E364C9001F52B5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Anastasia;
 				TargetAttributes = {
 					5DDE0B5F21E364C9001F52B5 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					ADAEF96221E4E4D80038F467 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 5DDE0B5F21E364C9001F52B5;
 					};
 				};
 			};
@@ -116,6 +179,7 @@
 			projectRoot = "";
 			targets = (
 				5DDE0B5F21E364C9001F52B5 /* LoginApp */,
+				ADAEF96221E4E4D80038F467 /* LoginAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +192,13 @@
 				5DDE0B7621E364F7001F52B5 /* Main.storyboard in Resources */,
 				5DDE0B6E21E364CC001F52B5 /* LaunchScreen.storyboard in Resources */,
 				5DDE0B6B21E364CC001F52B5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADAEF96121E4E4D80038F467 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +215,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ADAEF95F21E4E4D80038F467 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADAEF97221E4E4EF0038F467 /* ApplicationWindow.swift in Sources */,
+				ADAEF97321E4E4EF0038F467 /* GeneralUITest.swift in Sources */,
+				ADAEF97421E4E4EF0038F467 /* LoginUITest.swift in Sources */,
+				ADAEF97121E4E4EF0038F467 /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADAEF96921E4E4D90038F467 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DDE0B5F21E364C9001F52B5 /* LoginApp */;
+			targetProxy = ADAEF96821E4E4D90038F467 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5DDE0B6C21E364CC001F52B5 /* LaunchScreen.storyboard */ = {
@@ -280,6 +370,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LoginApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,6 +388,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LoginApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +397,44 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ADAEF96B21E4E4D90038F467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LoginAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = meow.LoginAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LoginApp;
+			};
+			name = Debug;
+		};
+		ADAEF96C21E4E4D90038F467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LoginAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = meow.LoginAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LoginApp;
 			};
 			name = Release;
 		};
@@ -325,6 +455,15 @@
 			buildConfigurations = (
 				5DDE0B7321E364CC001F52B5 /* Debug */,
 				5DDE0B7421E364CC001F52B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADAEF96A21E4E4D90038F467 /* Build configuration list for PBXNativeTarget "LoginAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADAEF96B21E4E4D90038F467 /* Debug */,
+				ADAEF96C21E4E4D90038F467 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
